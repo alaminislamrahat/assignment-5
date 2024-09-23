@@ -37,7 +37,11 @@ const addAndRemoveClass = (firstElement, secondElement) => {
 
 
 const noakhali = () => {
-
+    let noakhaliInputString = document.getElementById('noakhali-input').value;
+    if(noakhaliInputString == ''){
+        alert('you have to add amount');
+        return;
+    }
 
     my_modal_1.showModal()
 
@@ -46,7 +50,7 @@ const noakhali = () => {
     const myAmount = document.getElementById('my-amount');
     const noakhaliAmount = document.getElementById('noakhali-amount');
 
-    let noakhaliInputString = document.getElementById('noakhali-input').value;
+    
 
     equation(noakhaliAmount, noakhaliInputString, myAmount, noakhaliTitle)
 
@@ -59,6 +63,12 @@ const noakhali = () => {
 
 const feni = () => {
 
+    let feniInputString = document.getElementById('feni-input').value;
+    if(feniInputString == ''){
+        alert('you have to add amount');
+        return;
+    }
+
     my_modal_1.showModal()
 
     const feniTitle = document.getElementById('feni-title').innerText;
@@ -66,13 +76,21 @@ const feni = () => {
     const myAmount = document.getElementById('my-amount');
     const feniAmount = document.getElementById('feni-amount');
 
-    let feniInputString = document.getElementById('feni-input').value;
+   
 
     equation(feniAmount, feniInputString, myAmount, feniTitle)
 
 }
 
 const qouta = () => {
+
+    let qoutaInputString = document.getElementById('qouta-input').value;
+
+    if(qoutaInputString == ''){
+        alert('you have to add amount');
+        return;
+    }
+
 
     my_modal_1.showModal()
 
@@ -81,7 +99,7 @@ const qouta = () => {
     const myAmount = document.getElementById('my-amount');
     const qoutaAmount = document.getElementById('qouta-amount');
 
-    let qoutaInputString = document.getElementById('qouta-input').value;
+   
 
     equation(qoutaAmount, qoutaInputString, myAmount, qoutaTitle)
 
