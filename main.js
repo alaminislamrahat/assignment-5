@@ -105,7 +105,7 @@ const setHistory = (title, amount) => {
     const historyDiv = document.getElementById('history')
     const historyList = document.createElement('div');
     historyList.innerHTML = `
-        <div class="border-2 p-5 rounded-xl mt-4 space-y-4">
+        <div class="border-2  p-5 rounded-xl mt-4 space-y-4">
                <h1>${amount} taka is ${title}</h1>
                 <p>Date: ${new Date()}</p>
             </div>

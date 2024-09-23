@@ -11,45 +11,42 @@
 </head>
 
 <body>
-   <div class="fixed w-full">
-    <div class=" bg-[#f9f7f3] ">
-        <div class="navbar container mx-auto py-6 ">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
+    <div class="fixed w-full">
+        <div class=" bg-[#f9f7f3] ">
+            <div class="navbar container mx-auto py-6 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
 
+                    </div>
+                    <a onclick="blog()" id="blog" class="btn bg-[#b4f461] text-xl">Blog</a>
                 </div>
-                <a
-                onclick="blog()"
-                id="blog"
-                 class="btn bg-[#b4f461] text-xl">Blog</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <div class="flex items-center gap-3">
-                    <img src="/assets/logo.png" alt="">
-                    <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="flex items-center gap-3">
+                        <img src="/assets/logo.png" alt="">
+                        <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="navbar-end">
-                <div class="flex gap-2">
-                    <img src="/assets/coin.png" alt="">
-                    <p class="font-bold"><span id="my-amount">5500</span> BTD</p>
+                <div class="navbar-end">
+                    <div class="flex gap-2">
+                        <img src="/assets/coin.png" alt="">
+                        <p class="font-bold"><span id="my-amount">5500</span> BTD</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- nav end  -->
+        <div id="buttons" class="mx-auto my-10 gap-4 flex justify-center items-center ">
+            <button id="donation-btn" onclick="donationClick()" class="btn bg-[#b4f461]">Donation</button>
+            <button id="history-btn" onclick="historyClick()" class="btn btn-outline">History</button>
+        </div>
     </div>
-    <!-- nav end  -->
-    <div id="buttons" class="mx-auto my-10 gap-4 flex justify-center items-center ">
-        <button id="donation-btn"  onclick="donationClick()"  class="btn bg-[#b4f461]">Donation</button>
-        <button id="history-btn" onclick="historyClick()"  class="btn btn-outline">History</button>
-    </div>
-   </div>
 
     <div id="cards" class="parent container mx-auto space-y-6 pt-80">
         <div class="card-my flex flex-col md:flex-row justify-evenly gap-4 border p-8">
@@ -60,12 +57,12 @@
                     <p><span id="noakhali-amount">0</span> BTD</p>
                 </div>
                 <h1 id="noakhali-title" class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
                 <input id="noakhali-input" type="text" placeholder="Type here" class="input input-bordered w-full " />
-                <button  
-                
-                onclick="noakhali()"
-                class="btn btn-block bg-[#b4f461] font-bold ">Donate Now</button>
+                <button onclick="noakhali()" class="btn btn-block bg-[#b4f461] font-bold ">Donate Now</button>
             </div>
         </div>
         <div class="card-my  flex flex-col md:flex-row justify-evenly gap-4 border p-8">
@@ -76,11 +73,13 @@
                     <p><span id="feni-amount">0</span> BTD</p>
                 </div>
                 <h1 id="feni-title" class="text-3xl font-bold">Donate for Flood Relief in Feni,Bangladesh </h1>
-                <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need</p>
+                <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss.
+                    Your generous donation will help provide immediate aid, including food, clean water, and medical
+                    supplies, to those affected by this calamity. Together, we can offer crucial support and help
+                    rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
+                    difference. Please consider donating today to assist those in urgent need</p>
                 <input id="feni-input" type="text" placeholder="Type here" class="input input-bordered w-full " />
-                <button 
-                onclick="feni()"
-                 class="btn btn-block bg-[#b4f461] font-bold ">Donate Now</button>
+                <button onclick="feni()" class="btn btn-block bg-[#b4f461] font-bold ">Donate Now</button>
             </div>
         </div>
         <div class="card-my flex flex-col md:flex-row justify-evenly gap-4 border p-8">
@@ -91,62 +90,73 @@
                     <p><span id="qouta-amount">0</span> BTD</p>
                 </div>
                 <h1 id="qouta-title" class="text-3xl font-bold">Aid for Injured in the Quota Movement</h1>
-                <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                    individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
+                    supplies to those affected. By contributing, you help ensure that injured individuals receive the
+                    care and support they need during this challenging time. Every donation plays a vital role in
+                    alleviating their suffering and aiding in their recovery. Please consider making a donation to
+                    support these brave individuals in their time of need.</p>
                 <input id="qouta-input" type="text" placeholder="Type here" class="input input-bordered w-full " />
-                <button
-                onclick="qouta()"
-                 class="btn btn-block bg-[#b4f461] font-bold ">Donate Now</button>
+                <button onclick="qouta()" class="btn btn-block bg-[#b4f461] font-bold ">Donate Now</button>
             </div>
         </div>
     </div>
 
-    <div id="history" class="history container mx-auto hidden">
-        
+    <div id="history" class="history container pt-64 mx-auto hidden">
+
     </div>
 
 
     <!-- faq section  -->
-   <div id="faq" class="container mx-auto border p-6 hidden">
-    <h1 class="text-6xl font-bold text-center py-9 my-28">Important Faq</h1>
-    <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+    <div id="faq" class="container mx-auto border p-6 hidden">
+        <h1 class="text-6xl font-bold text-center py-9 my-28">Important Faq</h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is DOM methods?</div>
+            <div class="collapse-content">
+                <p>DOM methods allow programmatic access to the tree. With them, you can change the document's
+                    structure, style, or content. Nodes can also have event handlers attached to them. Once an event is
+                    triggered, the event handlers get executed.</p>
+            </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What are the three types of DOM?</div>
+            <div class="collapse-content">
+                <p>The W3C Dom standard is divided into three different parts:
+                    Core DOM – standard model for all document types.
+                    XML DOM – standard model for XML documents.
+                    HTML DOM – standard model for HTML documents.</p>
+            </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Why DOM is used?
+            </div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
+                    so that programs can change the document structure, style, and content. The DOM represents the
+                    document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
         </div>
-      </div>
-   </div>
+    </div>
 
     <!-- Open the modal using ID.showModal() method -->
 
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box flex flex-col justify-center items-center gap-2">
-    <h3 class="text-4xl font-bold">Congtates</h3>
-    <img src="/assets/coin.png" alt="">
-    <p class="py-4">You have donate for humankind</p>
-    <h1 class="text-3xl font-bold">Successfully</h1>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close confirmation</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex flex-col justify-center items-center gap-2">
+            <h3 class="text-4xl font-bold">Congtates</h3>
+            <img src="/assets/coin.png" alt="">
+            <p class="py-4">You have donate for humankind</p>
+            <h1 class="text-3xl font-bold">Successfully</h1>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     <script src="main.js"></script>
 </body>
 
