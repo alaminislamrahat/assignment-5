@@ -38,38 +38,53 @@
         </div>
     </div>
 
-    <h1 class="text-6xl font-bold text-center py-9 mb-6">Important Faq</h1>
-    <div class="container mx-auto border p-10 ">
-        
-        <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What is DOM methods?</div>
+    <div class="container mx-auto space-y-4">
+        <h2 class="text-3xl font-bold mb-5 my-7 ml-5">Important FAQ <i class="fa-regular fa-circle-question"></i></h2>
+    <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-                <p>DOM methods allow programmatic access to the tree. With them, you can change the document's
-                    structure, style, or content. Nodes can also have event handlers attached to them. Once an event is
-                    triggered, the event handlers get executed.</p>
+                <p>The Document Object Model (DOM) is a programming interface for web documents</p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What are the three types of DOM?</div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-                <p>The W3C Dom standard is divided into three different parts:
-                    Core DOM – standard model for all document types.
-                    XML DOM – standard model for XML documents.
-                    HTML DOM – standard model for HTML documents.</p>
+                <p>DOM stands for Document Object Model and is a programming interface that allows us to create,
+                    change or remove elements from the document. </p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Why DOM is used?
-            </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
-                    so that programs can change the document structure, style, and content. The DOM represents the
-                    document as nodes and objects; that way, programming languages can interact with the page.</p>
+                <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
             </div>
         </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>use the setAttribute() method</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">What is the node type in DOM?</div>
+            <div class="collapse-content">
+              <p>The nodeType property returns the node type, as a number, of the specified node.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">What is the difference between HTML and DOM?</div>
+            <div class="collapse-content">
+              <p>HTML represents the initial page content and the DOM (Document Object Model) represents the current content in a tree of objects.</p>
+            </div>
+          </div>
+    </div>
     </div>
 </body>
 </html>

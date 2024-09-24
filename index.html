@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="fixed w-full">
+    <div class="sticky top-0 z-10 backdrop-blur-xl ">
         <div class=" bg-[#f9f7f3] ">
             <div class="navbar container mx-auto py-6 ">
                 <div class="navbar-start">
@@ -42,13 +42,13 @@
             </div>
         </div>
         <!-- nav end  -->
-        <div id="buttons" class="mx-auto my-10 gap-4 flex justify-center items-center ">
+        <div id="buttons" class="mx-auto  gap-4 flex justify-center items-center py-10">
             <button id="donation-btn" onclick="donationClick()" class="btn bg-[#b4f461]">Donation</button>
             <button id="history-btn" onclick="historyClick()" class="btn btn-outline">History</button>
         </div>
     </div>
 
-    <div id="cards" class="parent container mx-auto space-y-6 pt-80">
+    <div id="cards" class="parent container mx-auto space-y-6 ">
         <div class="card-my flex flex-col md:flex-row justify-evenly gap-4 border p-8">
             <img class="w-full" src="./assets/noakhali.png" alt="">
             <div class="body flex flex-col gap-7  justify-center">
@@ -102,7 +102,7 @@
         </div>
     </div>
 
-    <div id="history" class="history container pt-64 mx-auto hidden">
+    <div id="history" class="history container  mx-auto hidden">
 
     </div>
 
