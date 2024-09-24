@@ -133,35 +133,12 @@ const setHistory = (title, amount) => {
 
 }
 
-let bool = true;
-let blogBtn = document.getElementById('blog');
-const faq = document.getElementById('faq')
-const buttons = document.getElementById('buttons')
-const blog = () => {
-
-    bool = !bool
-
-    if (bool) {
-        blogBtn.textContent = 'Blog';
-
-        faq.classList.add('hidden');
-        buttons.classList.remove('hidden');
-        cards.classList.remove('hidden');
-        historySection.classList.remove('hidden')
-    }
-    else {
-        blogBtn.textContent = 'Home';
-        faq.classList.remove('hidden');
-       buttons.classList.add('hidden');
-       cards.classList.add('hidden');
-       historySection.classList.add('hidden')
-      
-    }
 
 
 
 
-}
+
+
 
 
 

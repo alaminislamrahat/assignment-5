@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class=" bg-[#f9f7f3] ">
+        <div class="navbar container mx-auto py-6 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+
+                </div>
+                <a href="index.html" id="blog" class="btn bg-[#b4f461] text-xl">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <div class="flex items-center gap-3">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="flex gap-2">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="font-bold"><span id="my-amount">5500</span> BTD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-6xl font-bold text-center py-9 mb-6">Important Faq</h1>
+    <div class="container mx-auto border p-10 ">
+        
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is DOM methods?</div>
+            <div class="collapse-content">
+                <p>DOM methods allow programmatic access to the tree. With them, you can change the document's
+                    structure, style, or content. Nodes can also have event handlers attached to them. Once an event is
+                    triggered, the event handlers get executed.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What are the three types of DOM?</div>
+            <div class="collapse-content">
+                <p>The W3C Dom standard is divided into three different parts:
+                    Core DOM – standard model for all document types.
+                    XML DOM – standard model for XML documents.
+                    HTML DOM – standard model for HTML documents.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Why DOM is used?
+            </div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
+                    so that programs can change the document structure, style, and content. The DOM represents the
+                    document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
