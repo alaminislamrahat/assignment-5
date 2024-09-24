@@ -38,7 +38,7 @@ const addAndRemoveClass = (firstElement, secondElement) => {
 
 const noakhali = () => {
     let noakhaliInputString = document.getElementById('noakhali-input').value;
-    if(noakhaliInputString == ''){
+    if(noakhaliInputString == '' || noakhaliInputString < 0){
         alert('you have to add amount');
         return;
     }
@@ -64,7 +64,7 @@ const noakhali = () => {
 const feni = () => {
 
     let feniInputString = document.getElementById('feni-input').value;
-    if(feniInputString == ''){
+    if(feniInputString == '' || feniInputString < 0){
         alert('you have to add amount');
         return;
     }
@@ -86,7 +86,7 @@ const qouta = () => {
 
     let qoutaInputString = document.getElementById('qouta-input').value;
 
-    if(qoutaInputString == ''){
+    if(qoutaInputString == '' || qoutaInputString < 0){
         alert('you have to add amount');
         return;
     }
